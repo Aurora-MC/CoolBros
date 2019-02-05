@@ -1,0 +1,9 @@
+version: 1.0.0
+name: coolbros
+main: com.stephen.coolbros.Main
+author: iAtomPlaza
+description: kill/death scoring in java
+commands:
+  setjoinmessage:
+    aliases: [sjm, jm, sm]
+    description: setts your onJoin message!
