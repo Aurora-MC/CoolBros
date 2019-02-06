@@ -2,16 +2,16 @@ package com.stephen.coolbros;
 
 import org.bukkit.ChatColor;
 
-public class ColorText {
+public class Colorize {
 
     private Main plugin;
 
     /** Constructor */
-    public ColorText(Main plugin){
+    public Colorize(Main plugin){
         this.plugin = plugin;
     }
 
-    public String colorize(String colormessage) {
+    private String colorize(String colormessage) {
         colormessage = colormessage.replace("&1", ChatColor.DARK_BLUE+"");
         colormessage = colormessage.replace("&2", ChatColor.DARK_GREEN+"");
         colormessage = colormessage.replace("&3", ChatColor.DARK_AQUA+"");
@@ -35,5 +35,9 @@ public class ColorText {
         colormessage = colormessage.replace("&o", ChatColor.ITALIC+"");
         colormessage = colormessage.replace("&r", ChatColor.RESET+"");
         return colormessage;
+    }
+
+    public String addColor(String message){
+        return colorize(message);
     }
 }
